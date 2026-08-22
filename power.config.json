@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "appId": "778010cf-2b31-44d2-b3ca-76591c8e66e6",
+  "appDisplayName": "PM App",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "5f1c3826-a27c-e5fd-a19c-279395861e19",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {},
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "servicecenters": {
+          "entitySetName": "cre2b_servicecenters",
+          "logicalName": "cre2b_servicecenter",
+          "isHidden": false
+        },
+        "servicecenterproximities": {
+          "entitySetName": "cre2b_servicecenterproximities",
+          "logicalName": "cre2b_servicecenterproximity",
+          "isHidden": false
+        },
+        "workorders": {
+          "entitySetName": "cre2b_workorders",
+          "logicalName": "cre2b_workorder",
+          "isHidden": false
+        },
+        "workorderstatushistories": {
+          "entitySetName": "cre2b_workorderstatushistories",
+          "logicalName": "cre2b_workorderstatushistory",
+          "isHidden": false
+        },
+        "personnels": {
+          "entitySetName": "cre2b_personnels",
+          "logicalName": "cre2b_personnel",
+          "isHidden": false
+        },
+        "feedbacks": {
+          "entitySetName": "cre2b_feedbacks",
+          "logicalName": "cre2b_feedback",
+          "isHidden": false
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}
