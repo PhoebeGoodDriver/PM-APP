@@ -43,6 +43,11 @@
           "entitySetName": "cre2b_feedbacks",
           "logicalName": "cre2b_feedback",
           "isHidden": false
+        },
+        "workorderbatches": {
+          "entitySetName": "cre2b_workorderbatchs",
+          "logicalName": "cre2b_workorderbatch",
+          "isHidden": false
         }
       },
       "environmentVariableName": ""

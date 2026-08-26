@@ -33,6 +33,13 @@ export const dataSourcesInfo = {
     "dataSourceType": "Dataverse",
     "apis": {}
   },
+  "cre2b_workorderbatchs": {
+    "tableId": "",
+    "version": "",
+    "primaryKey": "cre2b_workorderbatchid",
+    "dataSourceType": "Dataverse",
+    "apis": {}
+  },
   "cre2b_workorders": {
     "tableId": "",
     "version": "",

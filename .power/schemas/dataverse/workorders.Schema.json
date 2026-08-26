@@ -57,6 +57,22 @@
           "x-ms-schema-name": "cre2b_assignpoolName",
           "x-ms-read-only": true
         },
+        "cre2b_batch": {
+          "type": "string",
+          "title": "Batch",
+          "x-ms-dataverse-attribute": "cre2b_batch",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "cre2b_Batch"
+        },
+        "cre2b_batchname": {
+          "type": "string",
+          "title": "cre2b_batchname",
+          "x-ms-dataverse-attribute": "cre2b_batchname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "cre2b_BatchName",
+          "x-ms-read-only": true,
+          "maxLength": 850
+        },
         "cre2b_circuitdetails": {
           "type": "string",
           "title": " Circuit Details",
@@ -153,16 +169,19 @@
             "Upgrade",
             "Hardware",
             "Software",
-            "Remove"
+            "Remove",
+            "Other"
           ],
           "x-ms-enum-values": [
             200080000,
             200080001,
             200080002,
             200080003,
-            200080004
+            200080004,
+            200080005
           ],
           "Color": [
+            null,
             null,
             null,
             null,
@@ -211,7 +230,8 @@
             "Server",
             "Switch",
             "UPS",
-            "WAP"
+            "WAP",
+            "Other"
           ],
           "x-ms-enum-values": [
             200080000,
@@ -228,9 +248,11 @@
             200080011,
             200080012,
             200080013,
-            200080014
+            200080014,
+            200080015
           ],
           "Color": [
+            null,
             null,
             null,
             null,
@@ -345,6 +367,14 @@
           "x-ms-dataverse-type": "VirtualType",
           "x-ms-schema-name": "cre2b_statusName",
           "x-ms-read-only": true
+        },
+        "cre2b_trackingnumber": {
+          "type": "string",
+          "title": "Tracking Number",
+          "x-ms-dataverse-attribute": "cre2b_trackingnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "cre2b_TrackingNumber",
+          "maxLength": 100
         },
         "cre2b_traveltimeminutes": {
           "type": "string",

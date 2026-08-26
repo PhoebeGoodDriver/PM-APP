@@ -12,7 +12,8 @@ export const Cre2b_workorderscre2b_problemtype = {
   200080001: 'Upgrade',
   200080002: 'Hardware',
   200080003: 'Software',
-  200080004: 'Remove'
+  200080004: 'Remove',
+  200080005: 'Other'
 } as const;
 export type Cre2b_workorderscre2b_problemtype = keyof typeof Cre2b_workorderscre2b_problemtype;
 export const Cre2b_workorderscre2b_producttype = {
@@ -30,7 +31,8 @@ export const Cre2b_workorderscre2b_producttype = {
   200080011: 'Server',
   200080012: 'Switch',
   200080013: 'UPS',
-  200080014: 'WAP'
+  200080014: 'WAP',
+  200080015: 'Other'
 } as const;
 export type Cre2b_workorderscre2b_producttype = keyof typeof Cre2b_workorderscre2b_producttype;
 export const Cre2b_workorderscre2b_status = {
@@ -61,6 +63,7 @@ export type Cre2b_workordersstatuscode = keyof typeof Cre2b_workordersstatuscode
 export interface Cre2b_workordersBase {
   "cre2b_AssignedTo@odata.bind"?: string;
   cre2b_assignpool?: Cre2b_workorderscre2b_assignpool;
+  "cre2b_Batch@odata.bind"?: string;
   cre2b_circuitdetails?: string;
   cre2b_closingcomment?: string;
   cre2b_computerhostname?: string;
@@ -80,6 +83,7 @@ export interface Cre2b_workordersBase {
   cre2b_roomarea?: string;
   "cre2b_ServiceCenter@odata.bind"?: string;
   cre2b_status?: Cre2b_workorderscre2b_status;
+  cre2b_trackingnumber?: string;
   cre2b_traveltimeminutes?: number;
   cre2b_wonumber: string;
   cre2b_workorderid: string;
@@ -95,6 +99,7 @@ export interface Cre2b_workordersBase {
 export interface Cre2b_workorders extends Cre2b_workordersBase {
   cre2b_assignedtoname?: string;
   cre2b_assignpoolname?: string;
+  cre2b_batchname?: string;
   cre2b_problemtypename?: string;
   cre2b_producttypename?: string;
   cre2b_servicecentername?: string;
@@ -120,6 +125,8 @@ export interface Cre2b_workorders extends Cre2b_workordersBase {
   versionnumber?: number;
   cre2b_assignedto?: object;
   _cre2b_assignedto_value?: string;
+  cre2b_batch?: object;
+  _cre2b_batch_value?: string;
   cre2b_servicecenter?: object;
   _cre2b_servicecenter_value?: string;
   createdby?: object;

@@ -9,6 +9,7 @@ export * as Cre2b_feedbacksModel from './models/Cre2b_feedbacksModel';
 export * as Cre2b_personnelsModel from './models/Cre2b_personnelsModel';
 export * as Cre2b_servicecenterproximitiesModel from './models/Cre2b_servicecenterproximitiesModel';
 export * as Cre2b_servicecentersModel from './models/Cre2b_servicecentersModel';
+export * as Cre2b_workorderbatchsModel from './models/Cre2b_workorderbatchsModel';
 export * as Cre2b_workordersModel from './models/Cre2b_workordersModel';
 export * as Cre2b_workorderstatushistoriesModel from './models/Cre2b_workorderstatushistoriesModel';
 
@@ -17,5 +18,6 @@ export * from './services/Cre2b_feedbacksService';
 export * from './services/Cre2b_personnelsService';
 export * from './services/Cre2b_servicecenterproximitiesService';
 export * from './services/Cre2b_servicecentersService';
+export * from './services/Cre2b_workorderbatchsService';
 export * from './services/Cre2b_workordersService';
 export * from './services/Cre2b_workorderstatushistoriesService';
